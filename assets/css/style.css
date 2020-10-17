@@ -161,6 +161,12 @@ sub { bottom: -.25em; }
    Common styling start
    ========================================================================== */
 
+   :root {
+    --main-color: #ffffff;
+    --secondary-color: #464e68;
+    --time: .3s ease-in-out;
+  }
+
   body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -190,13 +196,60 @@ sub { bottom: -.25em; }
    ========================================================================== */
 
 /* ==========================================================================
-   Header
+   Header starts
    ========================================================================== */
 
-   .header{
-     
-   }
+  .header {
+    width: 100%;
+  }
+
+  .header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo a {
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--main-color);
+  }
+
+  .logo a, .menu li a {
+    padding: 20px;
+  }
+
+  .logo-bold-text {
+    font-size: 15px;
+    color: var(--secondary-color);
+  }
+
+  .navbar {width: 50%;}
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu li a {
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    transition: var(--time);
+  }
+
+  .menu li a:hover {
+    color: var(--main-color);
+    font-size: 18px;
+  }
 
 /* ==========================================================================
-   Header
+   Header ends
+   ========================================================================== */
+
+/* ==========================================================================
+   Banner starts
+   ========================================================================== */
+
+/* ==========================================================================
+   Banner ends
    ========================================================================== */
