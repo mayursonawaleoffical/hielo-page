@@ -191,6 +191,23 @@ sub { bottom: -.25em; }
     display: inline-block;
     list-style-type: none;
   }
+
+  .subheadline {
+    color: #799a9a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .subheadline::after {
+    content: '';
+    width: 80%;
+    border-top: 1px solid #799a9a;
+    margin: 10px 0;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 /* ==========================================================================
    Common styling end
    ========================================================================== */
@@ -294,4 +311,83 @@ sub { bottom: -.25em; }
 
 /* ==========================================================================
    Banner ends
+   ========================================================================== */
+
+/* ==========================================================================
+   about starts
+   ========================================================================== */
+
+  .about {
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  .about .wrapper {
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: calc(48% - 4px);
+    text-align: center;
+    background-color: var(--main-color);
+  }
+
+  .card-img {width: 100%;}
+
+  .card-img img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-text {margin: 48px 0 30px 0;}
+
+  .card-subheadline {
+    font-size: 12px;
+  }
+
+  .card-text .card-subheadline::after {
+    content: '';
+    width: 80%;
+    border-top: 1px solid #799a9a;
+    margin: 10px 0;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .card-headline {
+    font-size: 28px;
+    font-weight: lighter;
+  }
+
+  .card-info {
+    margin-bottom: 20px;
+    padding: 0 60px;
+    color: #799a9a;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .card-link {
+    padding: 10px 15px;
+    border: 2px solid #799a9a;
+    margin-bottom: 48px;
+    color: #000000;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    transition: var(--time);
+  }
+
+  .card-link:hover {
+    background-color: #799a9a;
+    color: #ffffff;
+  }
+
+/* ==========================================================================
+   about ends
    ========================================================================== */
